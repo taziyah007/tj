@@ -1,0 +1,3 @@
+#nights { font-style: italic!important; font-size: 12pt!important; }
+#reisen { display:table; margin: 0 auto; padding-left: 0; }
+#reisen li:first-child { list-style: none; }
