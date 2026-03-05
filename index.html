@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>T&J Countdown</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.4.2/pure-min.css">
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic">
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
+      <link rel="stylesheet" href="https://hilios.github.io/jQuery.countdown/css/syntax.css">
+      <link rel="stylesheet" href="https://hilios.github.io/jQuery.countdown/css/main.css">
+	    <link rel="stylesheet" href="/countdown.css">
+      <script src="//code.jquery.com/jquery.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+      <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+   </head>
+   <body>
+      <center>
+         <h2><b>T&J</b></h2>
+	    <h3>Sonntag, 6. März 2026</h3>
+      </center>
+      <div class="example-base">
+         <span id="clock"></span>
+	 <!-- <span id="nights" style="font-style: italic; font-size: 1.2em!important;"> noch 
+	  <script type = "text/javascript" > 
+	var date1 = new Date(); 
+	var date2 = new Date("2026/03/06"); 
+
+	var Difference_In_Time = date2.getTime() - date1.getTime(); 
+	var Difference_In_Days = (Difference_In_Time / (1000 * 3600 * 24) + 1); 
+
+	document.write(Math.floor(Difference_In_Days)); 
+	</script>
+		 0x schlafen :-)
+	      </span>-->
+	<i>2026/03/06</i>
+      </div>
+      <center>
+         <p>&#127759; | &#x2764; | &#9973;</p>
+	      <small>
+	 <p style="margin-bottom:0;">
+		 Treffen:</p>
+	      <ul id="reisen">
+		     <li><a href="/treffen/2026-03-06.html">2026/03/06</a></li>
+	      </ul>
+	      </small>
+      </center>
+      <script>
+         $('#clock').countdown('2026/03/06', function(event) {
+           $(this).html(event.strftime('%D Tage %H:%M:%S'));
+         });
+      </script>
+   </body>
+</html>
