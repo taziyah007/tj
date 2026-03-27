@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>T & J Countdown</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.4.2/pure-min.css">
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic">
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
+      <link rel="stylesheet" href="https://hilios.github.io/jQuery.countdown/css/syntax.css">
+      <link rel="stylesheet" href="https://hilios.github.io/jQuery.countdown/css/main.css">
+      <script src="//code.jquery.com/jquery.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+      <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+   </head>
+   <body>
+      <center>
+         <h2><b>Treffen T&J</b></h2>
+         <h3>Sonntag, 29.3.2026</h3>
+      </center>
+      <div class="example-base">
+         <span id="clock"></span>
+         <i>2026/03/29</i>
+      </div>
+      <center>
+         <p>&#127759; | &#x2764; | &#128099;</p>
+      </center>
+      <script>
+         $('#clock').countdown('2026/03/29', function(event) {
+           $(this).html(event.strftime('%D Tage %H:%M:%S'));
+         });
+      </script>
+   </body>
+</html>
